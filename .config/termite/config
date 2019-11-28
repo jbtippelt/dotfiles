@@ -1,8 +1,10 @@
-[options]
-font = Monospace 11
-font = xos4 Terminus 12px
-font = Droid Sans Mono 10
+# Before oh-my-zsh installation
+#
+# [options]
+# font = Monospace 11
+# font = xos4 Terminus 12px
+# font = Droid Sans Mono 10
 
-[colors]
-foreground = #ffffff
-background = #000000
+# [colors]
+# foreground = #ffffff
+# background = #000000
