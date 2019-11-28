@@ -1,0 +1,3 @@
+echo "executing dmrc"
+[Desktop]
+Session=i3
