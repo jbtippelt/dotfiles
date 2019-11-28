@@ -1,2 +1,4 @@
 [user]
 	name = Jakob Tippelt
+[core]
+	editor = vim
