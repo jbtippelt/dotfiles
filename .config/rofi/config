@@ -1,0 +1,3 @@
+rofi.theme: /.config/rofi/themes/android_notification.rasi
+rofi.font: source code pro 12
+rofi.dpi: 200
