@@ -3,7 +3,7 @@
 
 export ZSH="/home/jboka/bin/.oh-my-zsh"
 
-ZSH_THEME="norm"
+ZSH_THEME="lambda"
 
 COMPLETION_WAITING_DOTS="true"
 
