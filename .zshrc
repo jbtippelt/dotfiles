@@ -13,4 +13,5 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+alias jc='~/bin/jboka_config.sh'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
