@@ -37,16 +37,6 @@ chip = "coretemp-isa-*"
 block = "sound"
 
 [[block]]
-block = "net"
-device = "wlp3s0"
-ssid = true
-signal_strength = true
-ip = false
-speed_up = true
-graph_up = false
-interval = 5
-
-[[block]]
 block = "time"
 interval = 60
 format = "%d.%m.%Y %R"
