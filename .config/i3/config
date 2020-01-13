@@ -30,6 +30,8 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+exec_always --no-startup-id exec i3-workspace-names-daemon
+
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
@@ -87,9 +89,9 @@ bindsym $mod+v split v
 bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
+#bindsym $mod+s layout stacking
+#bindsym $mod+w layout tabbed
+#bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -98,7 +100,7 @@ bindsym $mod+Shift+space floating toggle
 bindsym $mod+space focus mode_toggle
 
 # focus the parent container
-bindsym $mod+a focus parent
+#bindsym $mod+a focus parent
 
 # focus the child container
 #bindsym $mod+d focus child
@@ -115,6 +117,18 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
+set $ws_a "11"
+set $ws_s "12"
+set $ws_p "13"
+set $ws_o "14"
+set $ws_g "15"
+set $ws_m "16"
+
+for_window [class="Firefox"] move workspace number $ws_a
+for_window [class="Thunderbird"] move workspace number $ws_m
+for_window [class="GitKraken"] move workspace number $ws_g
+for_window [class="jetbrains-webstorm"] move workspace number $ws_p
+for_window [class="jetbrains-idea"] move workspace number $ws_o
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -127,6 +141,12 @@ bindsym $mod+7 workspace number $ws7
 bindsym $mod+8 workspace number $ws8
 bindsym $mod+9 workspace number $ws9
 bindsym $mod+0 workspace number $ws10
+bindsym $mod+a workspace number $ws_a
+bindsym $mod+s workspace number $ws_s
+bindsym $mod+p workspace number $ws_p
+bindsym $mod+o workspace number $ws_o
+bindsym $mod+g workspace number $ws_g
+bindsym $mod+m workspace number $ws_m
 
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace number $ws1
@@ -139,6 +159,12 @@ bindsym $mod+Shift+7 move container to workspace number $ws7
 bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
+bindsym $mod+Shift+a move container to workspace number $ws_a
+bindsym $mod+Shift+s move container to workspace number $ws_s
+bindsym $mod+Shift+g move container to workspace number $ws_g
+bindsym $mod+Shift+p move container to workspace number $ws_p
+bindsym $mod+Shift+o move container to workspace number $ws_o
+bindsym $mod+Shift+m move container to workspace number $ws_m
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -146,6 +172,8 @@ bindsym $mod+Shift+c reload
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec i3-msg exit
+
+bindsym $mod+q exec "i3lock -u -f -o"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -192,3 +220,5 @@ bar {
 }
 
 default_border pixel 1
+
+workspace_auto_back_and_forth yes

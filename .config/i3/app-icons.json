@@ -1,0 +1,13 @@
+{
+    "firefox": "firefox",
+    "chromium": "chrome",
+    "chrome": "chrome",
+    "google-chrome": "chrome",
+    "termite": "terminal",
+    "thunderbird": "envelope",
+    "jetbrains-idea-ce": "edit",
+    "nautilus": "folder-open",
+    "clementine": "music",
+    "vlc": "play",
+    "signal": "comment"
+}
