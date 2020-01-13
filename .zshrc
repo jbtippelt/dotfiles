@@ -5,13 +5,17 @@ export ZSH="/home/jboka/bin/.oh-my-zsh"
 
 ZSH_THEME="lambda"
 
-COMPLETION_WAITING_DOTS="true"
-
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+
+bindkey -v
 
 # User configuration
 
 alias jc='~/bin/jboka_config.sh'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
+
