@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/.gem/ruby/2.6.0/bin:$HOME/bin:/usr/local/bin:$PATH
 
 export ZSH="/home/jboka/bin/.oh-my-zsh"
 
