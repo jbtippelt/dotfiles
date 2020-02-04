@@ -1,9 +1,8 @@
 {
     "firefox": "firefox",
     "chromium": "chrome",
-    "chrome": "chrome",
-    "google-chrome": "chrome",
     "termite": "terminal",
+    "gitkraken": "gitkraken",
     "thunderbird": "envelope",
     "jetbrains-idea-ce": "edit",
     "nautilus": "folder-open",
