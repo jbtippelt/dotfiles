@@ -12,3 +12,6 @@
 [branch "server"]
 	remote = origin
 	merge = refs/heads/server
+[branch "toje"]
+	remote = origin
+	merge = refs/heads/toje
