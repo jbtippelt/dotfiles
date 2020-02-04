@@ -7,7 +7,7 @@ export PATH=$HOME/bin/lastpass_wrapper:$PATH
 export ZSH="/home/$USER/bin/.oh-my-zsh"
 
 export ZSH_CUSTOM=$HOME/.config/oh-my-zsh/custom
-export USER_COLOR=027
+export USER_COLOR=163
 ZSH_THEME="lambda_custom"
 
 plugins=(git)
