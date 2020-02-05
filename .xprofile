@@ -1,4 +1,5 @@
 setxkbmap -option caps:escape
+setxkbmap -option compose:ralt
 
 if [ -z "$SSH_AUTH_SOCK" ] ; then
   eval $(ssh-agent -s)

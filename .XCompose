@@ -1,0 +1,11 @@
+include "%L"
+
+<Multi_key> <a> : "ä" adiaeresis
+<Multi_key> <A> : "Ä" Adiaeresis
+<Multi_key> <u> : "ü" udiaeresis
+<Multi_key> <U> : "Ü" Udiaeresis
+<Multi_key> <o> : "ö" odiaeresis
+<Multi_key> <O> : "Ö" Odiaeresis
+<Multi_key> <s> : "ß" Odiaeresis
+<Multi_key> <e> : "€" 
+
