@@ -18,9 +18,16 @@ bindkey -v
 
 # User configuration
 
+alias k="/usr/bin/kubectl"
 alias jc='~/bin/jboka_config.sh'
 alias dot='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+##FLIP
+flipInit=$HOME/flip/devops/shell-init.sh
+[ -f "$flipInit" ] && source "$flipInit"
+
+######
 
