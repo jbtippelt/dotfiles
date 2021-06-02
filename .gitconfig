@@ -1,4 +1,7 @@
 [user]
 	name = Jakob Tippelt
+	email = git@jakobtippelt.de
 [core]
 	editor = vim
+[init]
+	defaultBranch = main
