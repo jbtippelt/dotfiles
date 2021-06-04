@@ -53,6 +53,8 @@ bindsym $mod+Return exec termite #i3-sensible-terminal
 # kill focused window
 bindsym $mod+x kill
 
+bindsym $mod+w exec "systemctl suspend"
+
 # start dmenu (a program launcher)
 bindsym $mod+d exec "rofi -show run"
 # There also is the (new) i3-dmenu-desktop which only displays applications
