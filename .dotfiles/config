@@ -15,3 +15,6 @@
 [branch "toje"]
 	remote = origin
 	merge = refs/heads/toje
+[branch "swag"]
+	remote = origin
+	merge = refs/heads/swag
